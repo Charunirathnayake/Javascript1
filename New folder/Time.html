@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TimeShow</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function printTime (){
+			var now=new Date();
+			var hours=now.getHours();
+			var minitues=now.getMinutes();
+			var seconds=now.getSeconds();
+			document.write(hours+":"+minitues+":"+seconds+"<br>");
+		}
+		setInterval("printTime()",1000);
+	</script>
+
+</body>
+</html>

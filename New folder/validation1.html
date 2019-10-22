@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation</title>
+	<script type="text/javascript">
+		function fn1() {
+			// body...
+			var x=document.getElementById("txt1");
+			var y=document.getElementById("pass1");
+
+			if (x.value.trim()==""||y.value.trim()=="") {
+				alert("Check the value");
+				return false;
+			}
+			else{
+				alert("Successful Entering");
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="return fn1()">
+		<input id="txt1" type="text" name="text" placeholder="Username">
+		<br>
+		<br>
+        <input id="pass1"
+               type="password" name="password" placeholder="password">
+        <br>
+        <br>
+        <button type="submit">submit</button>
+
+	</form>
+
+</body>
+</html>

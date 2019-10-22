@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation3</title>
+	<script type="text/javascript">
+		function valid() {
+			// body...
+			var x=document.getElementById("t1");
+			var y=document.getElementById("p1");
+
+			if (x.value.trim()==" ") {
+				alert("hjjjjjjjjjjjjjj");
+				return false;
+			}
+			else if (y.value.trim()==" ") {
+				alert()
+			}
+		}
+		
+	</script>
+
+</head>
+<body>
+	<form onsubmit="return valid()">
+		<input id="t1" type="text" placeholder="UserName" name="text">
+		<br>
+		<br>
+		<input id="p1" type="password" placeholder="password" name="password">
+		<br>
+		<br>
+		<button type="Submit">Submit</button>>
+	</form>
+
+</body>
+</html>

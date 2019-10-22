@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation2</title>
+	<script type="text/javascript"> 
+		function fn1() {
+
+			// body...
+			var x=document.getElementById("uname");
+			var y=document.getElementById("pass");
+			if(x.value.trim()==" "){
+				alert("Check the Username");
+				
+				return false;
+			}
+			/*else if(y.value.trim()==" "){
+				alert("Check the value");
+				return false;
+			}
+			else if(y.value.trim().length<8){
+				alert("Your password is not efficient");
+				return false;
+
+		    }
+		    else{
+		    	return true;
+		    }
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="return fn1()" action="message.html">
+	<input id="uname" type="text" placeholder="Username">
+	<br>
+	<br>
+	<input id="pass" type="password" placeholder="password">
+	<br>
+	<br>
+	<button type="submit">Submit</button>
+	</form>
+    
+</body>
+</html>
