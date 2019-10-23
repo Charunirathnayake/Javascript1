@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function validation(){
+			var username=document.getElementById('uname').value;
+			var regx=/E00/;
+			if (regx.text(username)) {
+				alert("Valid username");
+			}
+			else{
+				alert(Invalid username)
+				document.getElementById('lbluser').style.visibility="visible";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+	<input type="text" placeholder="Username" id="uname">
+	<label id="lbluser" style="color: red; visibility: hidden;">Invalid username</label>
+	<br>
+	<br>
+	<input type="password" placeholder="Password" id="pass">
+	<br>
+	<button type="Submit" onclick="validation()">Submit</button>
+	<form>
+
+</body>
+</html>
